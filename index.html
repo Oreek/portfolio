@@ -7,7 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilex:ital,wght@0,100..700;1,100..700&family=Lilita+One&display=swap" rel="stylesheet">
     <style type="text/tailwindcss">  
     @theme {  
         --color-bg: #0b0f14;
@@ -16,14 +16,26 @@
         --color-muted: #93a4b8;
         --color-accent: #5cf0c5;
         --color-border: #1c2430; 
-        --font-display: "Lilita One", sans-serif;
+        --font-display: "Lilex", monospace;
     }
 </style>  
 </head>
 <body class="bg-bg text-text font-display min-h-screen">
-    <header id ="top" class="container mx-auto px-4 pt-8 pb-4 border-b border-border">
+    <header id="top" class="container mx-auto px-4 pt-8 pb-4 border-b border-border">
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-            <nav class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+            <div class="flex items-center justify-between w-full sm:w-auto">
+                <div class="font-bold">Oreek</div>
+                <details class="sm:hidden relative">
+                    <summary class="px-3 py-2 text-sm text-muted rounded border border-border cursor-pointer select-none list-none">Menu</summary>
+                    <div class="absolute right-0 mt-2 w-44 bg-card border border-border rounded-md shadow-lg flex flex-col gap-1 text-sm text-muted p-2">
+                        <a class="px-2 py-2 rounded hover:text-accent" href="#about">About</a>
+                        <a class="px-2 py-2 rounded hover:text-accent" href="#faq">FAQ</a>
+                        <a class="px-2 py-2 rounded hover:text-accent" href="#projects">Projects</a>
+                        <a class="px-2 py-2 rounded hover:text-accent" href="#contact">Contact</a>
+                    </div>
+                </details>
+            </div>
+            <nav class="hidden sm:flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                 <a href="#about" class="px-3 py-2 rounded border border-transparent hover:text-accent">About</a>
                 <a href="#faq" class="px-3 py-2 rounded border border-transparent hover:text-accent">FAQ</a>
                 <a href="#projects" class="px-3 py-2 rounded border border-transparent hover:text-accent">Projects</a>
