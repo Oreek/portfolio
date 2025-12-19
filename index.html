@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Oreek</title>
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <style type="text/tailwindcss">  
+    @theme {  
+        --color-bg: #0b0f14;
+        --color-card: #121821;
+        --color-text: #e7edf3;
+        --color-muted: #93a4b8;
+        --color-accent: #5cf0c5;
+        --color-border: #1c2430; 
+        --font-display: "Lilita One", sans-serif;
+    }  
+</style>  
 </head>
-<body>
-    <header>
-        <div>
-            <nav>
-                <a href="#">About</a>
-                <a href="#">FAQ</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
+<body class="bg-bg text-text font-display min-h-screen">
+    <header id ="top" class="container mx-auto px-4 pt-8 pb-4 border-b border-border">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+            <nav class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                <a href="#about" class="px-3 py-2 rounded border border-transparent hover:text-accent">About</a>
+                <a href="#faq" class="px-3 py-2 rounded border border-transparent hover:text-accent">FAQ</a>
+                <a href="#projects" class="px-3 py-2 rounded border border-transparent hover:text-accent">Projects</a>
+                <a href="#contact" class="px-3 py-2 rounded border border-transparent hover:text-accent">Contact</a>
             </nav>
         </div>
     </header>
