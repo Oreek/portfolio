@@ -170,13 +170,36 @@
             </section>
 
             <section id="contact" class="py-8 border-t border-border">
-                <div class="flex items-baseline justify-between gap-3 mb-3">
-                    <h2 class="text-lg font-semibold">Contact Me</h2>
-                    <p class="text-muted text-sm">Get in touch!</p>
+                <div class="text-center space-y-2 mb-6">
+                    <p class="text-accent uppercase tracking-wide text-xs">Say hi!</p>
+                    <h2 class="text-xl font-semibold">Contact Me</h2>
+                    <p class="text-muted text-sm">Silly questions are always welcome! (just don't troll or spam plz)</p>
                 </div>
-                <p class="text-muted max-w-3xl">Have a project in mind or just want to say hi? Reach out and I’ll respond within a day.</p>
-                <div class="flex flex-wrap items-center gap-3 mt-4">
-                    <a href="mailto:oreek@protonmail.com" class="px-5 py-3 rounded-lg font-semibold text-sm bg-accent text-[#051013] border border-border">oreek@protonmail.com</a>
+
+                <div class="flex justify-center">
+                    <form class="w-full max-w-xl rounded-xl border border-border bg-card/60 shadow-card p-6 sm:p-8 space-y-4">
+                        <div class="flex items-center justify-between text-xs uppercase tracking-wide text-muted">
+                            <span>Start a convo</span>
+                            <span class="text-accent">I'm always online</span>
+                        </div>
+
+                        <label class="grid gap-2 text-sm text-muted">
+                            <span class="text-text">Name</span>
+                            <input type="text" name="name" required class="w-full rounded-md border border-border bg-card px-3 py-2 text-text placeholder:text-muted/70 focus:border-accent focus:outline-none" placeholder="Your name" aria-label="Name">
+                        </label>
+                        <label class="grid gap-2 text-sm text-muted">
+                            <span class="text-text">Email</span>
+                            <input type="email" name="email" required class="w-full rounded-md border border-border bg-card px-3 py-2 text-text placeholder:text-muted/70 focus:border-accent focus:outline-none" placeholder="you@example.com" aria-label="Email">
+                        </label>
+                        <label class="grid gap-2 text-sm text-muted">
+                            <span class="text-text">Message</span>
+                            <textarea name="message" rows="4" required class="w-full rounded-md border border-border bg-card px-3 py-2 text-text placeholder:text-muted/70 focus:border-accent focus:outline-none" placeholder="How can I help?" aria-label="Message"></textarea>
+                        </label>
+                        <div class="flex flex-wrap items-center gap-3">
+                            <button type="submit" class="px-5 py-3 rounded-lg font-semibold text-sm bg-accent text-[#051013] border border-border">Send it</button>
+                            <a href="mailto:oreek@protonmail.com" class="text-muted hover:text-accent text-sm">or email: oreek@protonmail.com</a>
+                        </div>
+                    </form>
                 </div>
             </section>
         </main>
